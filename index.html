@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME</title>
+    <title>JavaScript Timer</title>
+    <title>Rock, Scissors, Paper, Spock, Lizard </title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>GAME</title>
-<title>JavaScript Timer</title>
-<title>Rock, Paper, Scissors, Lizard, Spock</title>
-<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <span>Rock, Scissors, Paper, Spock, Lizard</span>
+    <div id="user-options">
+        <div>
+            <div>
+                <input type="radio" id="1" name="option" class="user-option">
+                <label for="1">⛰️</label>
+            </div>
+            <div>
+                <input type="radio" id="2" name="option" class="user-option">
+                <label for="2">✂️</label>
+            </div>
+            <div>
+                <input type="radio" id="3" name="option" class="user-option">
+                <label for="3">🧻</label>
+            </div>
+            <div>
+                <input type="radio" id="4" name="option" class="user-option">
+                <label for="4">🖖</label>
+            </div>
+            <div>
+                <input type="radio" id="5" name="option" class="user-option">
+                <label for="5">🦎</label>
+            </div>
 
-<body>
-    <h1>
-        It's been <span id="timer">0</span> seconds since you loaded the page...
-    </h1>
+    <h6>
+      It's been <span id="timer">0</span> seconds since you loaded the game
+    </h6>
     <script>
-        setInterval(function () {
-            let timerElement = document.getElementById('timer');
-            let currentTime = timerElement.innerHTML;
-            currentTime++;
-            timerElement.innerHTML = currentTime;
-        }, 1000);
+      setInterval(function () {
+        let timerElement = document.getElementById("timer");
+        let currentTime = timerElement.innerHTML;
+        currentTime++;
+        timerElement.innerHTML = currentTime;
+      }, 1000);
     </script>
-</body>
-
+  </body>
 </html>
