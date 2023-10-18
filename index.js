@@ -1,3 +1,7 @@
+function getComputerChoice() {
+    return Math.floor((Math.random() * 5) + 1);
+}
+
 const ROCK = 'ROCK';
 const SCISSORS = 'SCISSORS';
 const PAPER = 'PAPER';
